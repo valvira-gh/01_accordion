@@ -25,3 +25,5 @@ const data = [
         answer: "Accordian components are commonly used for displaying FAQs, product features, and other types of content that can be organized into categories."
     }
 ]
+
+export default data;

@@ -1,12 +1,13 @@
 import './index.css';
 import React from 'react';
+import Accordian from './components/accordian';
 
 const App: React.FC = () => {
   
 
   return (
     <div>
-      <h1>React App</h1>
+     <Accordian />
     </div>
   );
 }
