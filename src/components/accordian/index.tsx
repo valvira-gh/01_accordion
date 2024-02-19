@@ -71,13 +71,6 @@ const Accordian: React.FC = () => {
                     : selected === dataItem.id && (
                         <div className='content'>{dataItem.answer}</div>
                       )}
-
-                  {/* // Jos elementin id on sama kuin valitun elementin id tai se löytyy multiple-arraysta, näytetään elementin vastaus
-        // Muussa tapauksessa ei näytetä mitään */}
-                  {selected === dataItem.id ||
-                  multiple.indexOf(dataItem.id) !== -1 ? (
-                    <div className='content'>{dataItem.answer}</div>
-                  ) : null}
                 </div>
               </div>
             ))
