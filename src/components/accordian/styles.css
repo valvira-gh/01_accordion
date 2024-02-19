@@ -1,17 +1,27 @@
 .wrapper {
     display: flex;
+    flex-direction: column;
+    gap: 20px;
     height: 100svh;
     width: 100svw;
     justify-content: center;
     align-items: center;
+
+    && .btn {
+        padding: 10px 20px;
+        color: #FFF;
+        font-weight: 600;
+        background-color: #a35f06;
+    }
 }
 
 .accordian {
     width: 600px;
+    border-radius: 10px;
 }
 
 .item {
-    background-color: #614101;
+    background-color: #1a4ea7;
     margin-bottom: 10px;   
     padding: 10px 20px;
 }
