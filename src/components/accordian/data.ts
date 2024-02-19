@@ -1,4 +1,10 @@
-const data = [
+interface AccordianData {
+    id: string;
+    question: string;
+    answer: string;
+}
+
+const data: AccordianData[] = [
     {
         id: '1',
         question: "What are accordian components?",

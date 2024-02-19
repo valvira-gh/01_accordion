@@ -1,4 +1,4 @@
-import './index.css';
+import './App.css';
 import React from 'react';
 import Accordian from './components/accordian';
 
@@ -6,7 +6,7 @@ const App: React.FC = () => {
   
 
   return (
-    <div>
+    <div className='App'>
      <Accordian />
     </div>
   );
