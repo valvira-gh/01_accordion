@@ -15,14 +15,12 @@ const Accordian: React.FC = () => {
   }
 
   function handleMultiSelection(dataId: string) {
-    //Luodaan kopio statesta, jotta voidaan muokata sitä React-sääntöjen mukaisesti
     const copyMultiple: string[] = [...multiple];
-
     const findIndexOfCurrentId = copyMultiple.indexOf(dataId);
 
     if (findIndexOfCurrentId === -1 && dataId) {
       copyMultiple.push(dataId);
-    } else if (findIndexOfCurrentId !== -1) {
+    } else {
       copyMultiple.splice(findIndexOfCurrentId, 1);
     }
     setMultiple(copyMultiple);
